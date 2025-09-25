@@ -26,7 +26,7 @@ jobs:
       - name: Logging into the Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.Muzaffaribrar }}
+          username: ${{ secrets.muzaffaribrar }}
           password: ${{ secrets.Muzaffar4444# }}
         
       - name: Push the Docker Images to the Docker Hub
