@@ -2,8 +2,7 @@ name: LEMP Server
 on:
   push:
     branches:
-   # - src
-    - mainnnnnnn
+    - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,6 +12,12 @@ jobs:
         run: |
          docker-compose build
          
+         # Install Docker Compose plugin
+      - name: Install Docker Compose
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose-plugin
+          
       - name: Build the Docker images
         run: docker-compose build
         
