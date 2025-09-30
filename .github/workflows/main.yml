@@ -5,7 +5,7 @@ on:
     - main
 jobs:
   build:
-    runs-on: Muzaffar
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
       # Install Docker Compose (standalone binary)
